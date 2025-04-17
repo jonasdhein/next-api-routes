@@ -1,0 +1,36 @@
+GET http://localhost:3000/api/tarefas
+
+###
+POST http://localhost:3000/api/tarefas
+Content-Type: application/json
+
+{
+  "tarefa": "Descrição da tarefa nova",
+  "status": "Pendente"
+}
+
+###
+PUT http://localhost:3000/api/tarefas
+Content-Type: application/json
+
+{
+  "id": 21,
+  "status": true
+}
+
+###
+# PUT http://localhost:3000/api/tarefas?index=0
+# Content-Type: application/json
+
+# {
+#   "id": 1,
+#   "status": "Realizado"
+# }
+
+###
+DELETE http://localhost:3000/api/tarefas
+Content-Type: application/json
+
+{
+  "id": 1
+}
